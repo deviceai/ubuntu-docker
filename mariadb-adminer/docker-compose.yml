@@ -8,6 +8,8 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: power78
+    volumes:
+     - ./databases:/var/lib/mysql
 
   adminer:
     build: ./adminer
